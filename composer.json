@@ -1,0 +1,40 @@
+{
+    "name": "rodrigo-brito/fsphp",
+    "description": "Watercontrol Project",
+    "minimun-stability": "stable",
+    "authors": [
+        {
+            "name": "Rodrigo Brito",
+            "email": "administracao@existacontrol.com.br",
+            "homepage": "https://www.existacontrol.com.br",
+            "role": "Developer"
+        }
+    ],
+    "config": {
+        "vendor-dir": "vendor"
+    },
+    "autoload": {
+        "psr-4": {
+            "Source\\": "source/"
+        },
+        "files": [
+            "source/Boot/Config.php",
+            "source/Boot/Helpers.php",
+            "source/Boot/Minify/Web.php",
+            "source/Boot/Minify/App.php"
+        ]
+    },
+    "require": {
+        "php": "^7.1",
+        "ext-pdo": "^7.1",
+        "phpmailer/phpmailer": "~6.1",
+        "league/plates": "v4.0.0-alpha",
+        "matthiasmullie/minify": "^1.3",
+        "coffeecode/uploader": "^1.0",
+        "coffeecode/cropper": "^1.0",
+        "coffeecode/optimizer": "^1.0",
+        "coffeecode/paginator": "^1.0",
+        "coffeecode/router": "^1.0",
+        "ddeboer/data-import":"@stable"
+    }
+}
